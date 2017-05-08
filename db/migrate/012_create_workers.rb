@@ -1,4 +1,4 @@
-class CreateWorkers < ActiveRecord::Migration
+class CreateWorkers < ActiveRecord::Migration[5.1]
   def change
     create_table "workers" do |t|
       t.string   "hostname",     limit: 180,                      null: false
