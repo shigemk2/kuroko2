@@ -5,6 +5,15 @@ rvm:
   - 2.4.1
   - 2.3.3
   - 2.2.6
+addons:
+  apt:
+    sources:
+      - llvm-toolchain-precise
+      - ubuntu-toolchain-r-test
+    packages:
+      - clang-3.7
+      - g++-5
+      - gcc-5
 before_script:
   - mysql -u root -e "set global innodb_large_prefix=1;"
   - mysql -u root -e "set global innodb_file_format='Barracuda';"
