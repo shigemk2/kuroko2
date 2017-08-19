@@ -224,3 +224,18 @@ The message to show.
 ```
 echo: Hello world!
 ```
+
+## retry
+
+`retry` set retry count of command execution. The execution is killed by TERM signal.
+
+**Option**
+
+Number of counts.
+
+**Example**
+
+```
+retry: 3
+execute: echo "hello, world" 
+```
